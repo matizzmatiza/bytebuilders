@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    background-color: $dark;
+    padding: 2rem;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.header__logo {
+    max-width: clamp(5rem, 8vw, 60px);
+}
+
+.header__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header__link--nav {
+    color: $light;
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease-in-out;
+    &:hover {
+        border-color: $brand;
+    }
+}
+
+.header__link--active {
+    border-color: $brand;
+}
