@@ -7,7 +7,7 @@
 
 .singlenews__title {
     font-size: clamp(3rem, 5vw, 5rem);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .singlenews__date {
@@ -23,15 +23,21 @@
     color: lighten($dark, 20%);
 }
 
+.singlenews__wrapper {
+    margin-top: 2rem;
+}
+
 .singlenews__back {
     font-size: clamp(1.6rem, 3vw, 2rem);
     font-weight: 400;
     color: lighten($dark, 20%);
+    border: 1px solid lighten($dark, 40%);
+    padding: 1rem 2rem;
     text-decoration: none;
     display: inline-block;
-    margin-top: 2rem;
     transition: all 0.3s ease-in-out;
     &:hover {
         color: $brand;
+        border-color: $brand;
     }
 }

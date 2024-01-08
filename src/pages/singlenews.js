@@ -32,7 +32,9 @@ function SingleNews() {
                     <h1 className="singlenews__title">{post.title.rendered}</h1>
                     <p className="singlenews__date">Data dodania: {formateddate(post.date)}</p>
                     <p className="singlenews__content">{removeHtmlTags(post.content.rendered)}</p>
-                    <Link to='/news' className="singlenews__back">Powrót do aktualności</Link>
+                    <div className='singlenews__wrapper'>
+                        <Link to='/news' className="singlenews__back">Powrót do aktualności</Link>
+                    </div>
                 </>
             )}
         </section>
