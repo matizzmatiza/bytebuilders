@@ -1,0 +1,37 @@
+.singlenews {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 8rem 3rem;
+}
+
+.singlenews__title {
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 700;
+}
+
+.singlenews__date {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 400;
+    color: lighten($dark, 20%);
+}
+
+.singlenews__content {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 400;
+    line-height: 3rem;
+    color: lighten($dark, 20%);
+}
+
+.singlenews__back {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 400;
+    color: lighten($dark, 20%);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $brand;
+    }
+}

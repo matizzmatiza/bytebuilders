@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { updateTitle } from '../utils/title';
+import NewsList from "../components/newslist";
 
 function News() {
     useEffect(() => {
@@ -8,8 +9,8 @@ function News() {
     }, []);
 
     return (
-        <section className="section">
-            <h1 className="section__title">Aktualności</h1>
+        <section className="news">
+            <NewsList />
         </section>
     );
 }

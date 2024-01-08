@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Offer from "./pages/offer";
 import Realizations from "./pages/realizations";
 import News from "./pages/news";
+import SingleNews from './pages/singlenews';
 import Contact from "./pages/contact";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/realizations' element={<Realizations />} />
           <Route path='/news' element={<News />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/news/:id' element={<SingleNews />} />
         </Routes>
       </div>
     </Router>

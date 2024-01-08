@@ -1,14 +1,13 @@
 .header {
     width: 100%;
     background-color: $dark;
-    padding: 2rem;
 }
 
 .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 3rem 4rem;
 }
 
 .header__link {
@@ -24,7 +23,7 @@
 
 .header__list {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     list-style: none;
 }
 
