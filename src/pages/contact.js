@@ -8,8 +8,8 @@ function Contact() {
     }, []);
 
     return (
-        <section className="section">
-            <h1 className="section__title">Kontakt</h1>
+        <section className="contact">
+            <h1 className="contact__title">Kontakt</h1>
         </section>
     );
 }
