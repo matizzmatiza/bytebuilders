@@ -8,8 +8,8 @@ function Offer() {
     }, []);
 
     return (
-        <section className="section">
-            <h1 className="section__title">Oferta</h1>
+        <section className="offer">
+            <h1 className="offer__title">Oferta</h1>
         </section>
     );
 }

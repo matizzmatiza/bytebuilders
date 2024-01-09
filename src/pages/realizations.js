@@ -8,8 +8,8 @@ function Realizations() {
     }, []);
 
     return (
-        <section className="section">
-            <h1 className="section__title">Realizacje</h1>
+        <section className="realizations">
+            <h1 className="realizations__title">Realizacje</h1>
         </section>
     );
 }

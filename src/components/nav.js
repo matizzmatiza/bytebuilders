@@ -1,13 +1,27 @@
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Nav({ active, onLinkClick }) {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const navClass = active ? 'header__nav header__nav--active' : 'header__nav';
 
     const handleClick = () => {
-        if (onLinkClick) {
+        if (windowWidth < 768 && onLinkClick) {
             onLinkClick(!active);
         }
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <nav className={navClass}>

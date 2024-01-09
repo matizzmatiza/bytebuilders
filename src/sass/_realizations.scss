@@ -1,0 +1,12 @@
+.realizations {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 8rem 3rem;
+}
+
+.realizations__title {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-weight: 400;
+}
