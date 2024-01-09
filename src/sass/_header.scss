@@ -18,7 +18,17 @@
 }
 
 .header__logo {
+    position: relative;
+    z-index: 99999;
     max-width: clamp(5rem, 8vw, 60px);
+}
+
+.header__nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
 }
 
 .header__list {
@@ -29,7 +39,7 @@
 
 .header__link--nav {
     color: $light;
-    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    font-size: 1.6rem;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: all .2s ease-in-out;
@@ -40,4 +50,23 @@
 
 .header__link--active {
     border-color: $brand;
+}
+
+.header__nav--active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $dark;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem;
+}
+
+.header__nav--active .header__list {
+    flex-direction: column;
+    gap: 5rem;
 }
