@@ -10,3 +10,34 @@
     font-size: clamp(2.5rem, 5vw, 5rem);
     font-weight: 400;
 }
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__info__desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.contact__info__title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contact__info__phone, .contact__info__email {
+    color: $brand;
+    text-decoration: none;
+}

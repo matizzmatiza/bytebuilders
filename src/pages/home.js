@@ -1,7 +1,7 @@
 function Home() {
     return (
-        <section className="section">
-            <h1 className="section__title">Home</h1>
+        <section className="home">
+            <h1 className="home__title">Home</h1>
         </section>
     );
 }

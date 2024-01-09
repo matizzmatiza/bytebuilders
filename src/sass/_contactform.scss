@@ -1,0 +1,64 @@
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact__form__group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contact__form__label {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.contact__form__input {
+    padding: 1rem 1.5rem;
+    border-radius: 0px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all .2s;
+    outline: none;
+    border-left: 4px solid lighten($dark, 20%);
+    border-bottom: 4px solid lighten($dark, 20%);
+    border-top: 4px solid $brand;
+    border-right: 4px solid $brand;
+}
+
+.contact__form__button {
+    padding: 1rem 1.5rem;
+    border: 1px solid lighten($dark, 10%);
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: $dark;
+    color: $light;
+    font-family: $font-primary;
+    border: 4px solid lighten($dark, 20%);
+    &:hover {
+        background-color: $light;
+        color: $dark;
+    }
+}
+
+.contact__form__input--textarea {
+    resize: none;
+    height: 15rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact__form__success__message {
+    color: green;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
